@@ -38,10 +38,10 @@ getWeather();
 
 
 // Choose days counts
-// https://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={ec7fe5d89923c7457fe5b2b6882b88a3}&units=imperial
+// https://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={}&units=imperial
 // Long And lat
-// https://api.openweathermap.org/geo/1.0/direct?q=London=5&appid={ec7fe5d89923c7457fe5b2b6882b88a3}&units=imperial
+// https://api.openweathermap.org/geo/1.0/direct?q=London=5&appid={}&units=imperial
 // Current weather
-// https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={ec7fe5d89923c7457fe5b2b6882b88a3}&units=imperial
+// https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={&units=imperial
 
 
