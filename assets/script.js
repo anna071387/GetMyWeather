@@ -1,5 +1,5 @@
 async function getLatLon(query) {
-    var requestUrl =`https://api.openweathermap.org/geo/1.0/direct?q=${query}&appid=ec7fe5d89923c7457fe5b2b6882b88a3&units=imperial`;
+    var requestUrl =`https://api.openweathermap.org/geo/1.0/direct?q=${query}&=imperial`;
     try {
        var location = await fetch(requestUrl)
        var data = await location.json()
