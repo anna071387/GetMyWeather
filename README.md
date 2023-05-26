@@ -1,6 +1,9 @@
 # GetMyWeather 
 
-![alt text](./assets/images/MySky.jpg.jpg)
+![alt text](./assets/images/MySky.jpg.)
+
+Git Link:
+https://anna071387.github.io/GetMyWeather/
 
 ## Description 
 This is a weather app that allow to search for any city and discover what weather is currently in that city. 
