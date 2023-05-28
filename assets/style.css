@@ -10,29 +10,21 @@ body {
     font-family: sans-serif;
 }
 
-.blurred {
-    filter: blur (3px);
-    overflow: hidden; 
-}
 
-.header {
-    display: flex;
-    align-items: center;
-}
+
 
 .header-top {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
+ font-size: 1.5rem;
+ padding-top: 50px;
+ padding-bottom: 50px;
 }
-.p-5 {
-    margin-top: 35px;
-    background-color: rgb(178, 233, 250);
-    width: 100vw;
-    color:  rgb(69, 71, 73);
-    text-align: center;
-  }
+
+.local {
+    display: flex;
+
+}
 
 .header-left {
     display: flex;
@@ -41,9 +33,51 @@ body {
     justify-content: center;
     margin: .5rem;
     padding: .5rem;
-    border-right: 2px solid rgb(69, 71, 73) 
+    border-right: 2px solid rgb(69, 71, 73);
+}
+.header-right {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
 }
 
+.find {
+    display: flex;
+    margin: 25px;
+
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 75px;
+
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 71vw;
+    border: 1px solid rgb(69, 71, 73) ;
+    
+}
+.card {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(69, 71, 73);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
 .weather-icon {
     width: 40px;
     height: 40px;
@@ -58,15 +92,10 @@ body {
     font-size: 2rem;
     margin-left: 1rem;
 }
-.header-right {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: .5rem;
-    padding: .5rem;
+.header-city-current{
+    font-size: 2rem;
+    padding-left: 20px;
 }
-
 
 
 .info-group {
@@ -75,7 +104,7 @@ body {
     align-items: center;
 }
 
-.label {
+.label2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.6rem;
@@ -89,7 +118,8 @@ body {
 }
 
 .day-section {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat (auto, 75px);
     gap: .5rem;
     justify-content: center;
@@ -97,8 +127,8 @@ body {
 }
 
 .day-card {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
     border: 1px solid rgb(69, 71, 73);
     border-radius: 0.25rem;
@@ -112,15 +142,26 @@ body {
     margin-top: 0.5rem;
 }
 
-.city-sectioin {
-    width:100%;
-    text-align: center;
-    border-spacing: 0;
+.quoted {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background: white;
 }
+
+.city-section {
+    /* width:100%; */
+    text-align: center;
+    
+}
+
+
 .city-row {
     background-color: white;
     border: 3px rgb(69, 71, 73); 
     border-radius:0.25rem;
+    
 }
 .city-row:nth-child(2n) {
     background-color: rgb(196, 193, 193);
@@ -128,6 +169,7 @@ body {
     border-radius:0.25rem;
 }
 
-.hour-row > td {
-    padding: 0.25rem 0.5rem 
+.city-row > td {
+    padding: 0.5rem 1.5rem 
+    
 }

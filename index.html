@@ -8,182 +8,196 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>MySky</title>
 </head>
 
-<body class="blurred">
-    <section class="header-top p-5 mb-4">
-            <h1 class="display-3">Welcome to MySky</h1>
-            <h1 class="display-3">weather app</h1>
-            <section>
-              <p id= "1a" id="3a" class="answer" style='font-size:36px'></p>
-            </p>
-            <p id="currentDay" class="lead" ></p>
-          </section>
-        
-    </section>
-    <header class="header-top">
+<body>
 
+    <section class="header-top">Welcome to MySky Weather app
+    </section>
+
+    <section class="find">
+        <div class="field">
+            <label class="label"></label>
+            <div class="control is-grouped ">
+                <input class="input" type="text" placeholder="Search by City">
+            </div>
+            <div class="buttons">
+                <button class="button is-link">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <header class="header-top"> -->
+
+    <section class="local">
         <div class="header-left">
             <img class="weather-icon.large" src="./assets/images/icons/rain.png" data-current-icon />
             <div class="header-temp-current">
                 <span data-current-temp> 65</span>&deg;
             </div>
+            <div class="header-city-current"> Boston</div>
         </div>
 
 
         <div class="header-right">
 
             <div class="info-group">
-                <div class="label"> high</div>
-                </div><span data-current-high> 32</span>&deg;</div>
+                <div class="label2"> high</div>
+                <div><span data-current-high> 32</span>&deg;
+                </div>
             </div>
 
             <div class="info-group">
-                <div class="label"> low</div>
+                <div class="label2"> low</div>
                 <div><span data-current-low> 32</span>&deg;</div>
             </div>
 
             <div class="info-group">
-                <div class="label"> wind</div>
-                <div><span data-current-wind> 32</span> 
-                    <span calss="value-sub-info">mph</span></div>
+                <div class="label2"> wind</div>
+                <div><span data-current-wind> 32</span>
+                    <span calss="value-sub-info">mph</span>
+                </div>
             </div>
 
         </div>
-<!-- 
+    </section>
+    <!-- 
         <div id="weather-results"></div> -->
-    </header>
-
-<section class="day-section" data-day-section>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Monday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Tuesday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Wednesday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Thursday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Friday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Saturday</div>
-        <div>32&deg;</div>
-    </div>
-    <div class="day-card">
-        <img src="./assets/images/icons/clouds.png" class="weather-icon" />
-        <div class="day-card-date">Sunday</div>
-        <div>32&deg;</div>
-    </div>
-
-</section> 
-
-
-<table class="city-section">
-    <tbody data-city-section>
-       <tr class="city-row">
-        <td>
-            <div class="info-group">
-                <div class="label">City</div>
-                <div> Boston </div>
+    <!-- </header-top> -->
+    <section class="card">
+        <section class="day-section" data-day-section>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Monday</div>
+                <div>32&deg;</div>
             </div>
-        </td>
-        <td>
-            <img src="./assets/images/icons/clouds.png" class="weather-icon" >
-        </td>
-            <div class="info-group">
-            <div class="label">Temp</div>
-            <div> 31&deg; </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Tuesday</div>
+                <div>32&deg;</div>
+            </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Wednesday</div>
+                <div>32&deg;</div>
+            </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Thursday</div>
+                <div>32&deg;</div>
+            </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Friday</div>
+                <div>32&deg;</div>
+            </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Saturday</div>
+                <div>32&deg;</div>
+            </div>
+            <div class="day-card">
+                <img src="./assets/images/icons/clouds.png" class="weather-icon" />
+                <div class="day-card-date">Sunday</div>
+                <div>32&deg;</div>
             </div>
 
-        <td>
-            <div class="info-group">
-                <div class="label">Wind</div>
-                <div> 31 <span class="value-sub-info"> mph </span> </div>
-            </div>
-        </td>
-        <td>
-            <div class="info-group">
-                <div class="label">Humidity</div>
-                <div> 52&percnt;</div>
-            </div>
-        </td>
-       
-       </tr>
-    </tbody>
-</table>
+        </section>
+    </section>
+
+<section class="quoted">
+    <table class="city-section">
+        <tbody data-city-section>
+            <tr class="city-row">
+                <td>
+                    <div class="info-group">
+                        <div class="label">City</div>
+                        <div> Boston </div>
+                    </div>
+                </td>
+                <td>
+                    <img src="./assets/images/icons/clouds.png" class="weather-icon">
+                </td>
+                <td>
+                    <div class="info-group">
+                        <div class="label">Temp</div>
+                        <div> 31&deg; </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="info-group">
+                        <div class="label">Wind</div>
+                        <div> 31 <span class="value-sub-info"> mph </span> </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="info-group">
+                        <div class="label">Humidity</div>
+                        <div> 52&percnt;</div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
 
 
 
-<template id="day-card-template">
-    <div class="day-card">
-        <img data-icon class="weather-icon" />
-        <div class="day-card-date">data-date</div>
-        <div><span data-temp></span><span>&deg;</span></div>
-    </div>
 
-</template>
-
-<template id="city-row-template">
-    <tr class="city-row">
-        <td>
-            <div class="info-group">
-                <div class="label" data-day>City</div>
-                <div data-city></div>
-            </div>
-        </td>
-        <td>
-            <img data-icon class="weather-icon" >
-        </td>
-            <div class="info-group">
-            <div class="label">Temp</div>
+    <template id="day-card-template">
+        <div class="day-card">
+            <img data-icon class="weather-icon" />
+            <div class="day-card-date">data-date</div>
             <div><span data-temp></span><span>&deg;</span></div>
+        </div>
+
+    </template>
+
+    <template id="city-row-template">
+        <tr class="city-row">
+            <td>
+                <div class="info-group">
+                    <div class="label" data-day>City</div>
+                    <div data-city></div>
+                </div>
+            </td>
+            <td>
+                <img data-icon class="weather-icon">
+            </td>
+            <div class="info-group">
+                <div class="label">Temp</div>
+                <div><span data-temp></span><span>&deg;</span></div>
             </div>
 
-        <td>
-            <div class="info-group">
-                <div class="label">Wind</div>
-                <div><span data-wind></span><span class="value-sub-info"> mph </span> </div>
-            </div>
-        </td>
-        <td>
-            <div class="info-group">
-                <div class="label">Humidity</div>
-                <div><span data-humidity></span><span></span>&percnt;</span></div>
-            </div>
-        </td>
-       
-       </tr>
-</template>
+            <td>
+                <div class="info-group">
+                    <div class="label">Wind</div>
+                    <div><span data-wind></span><span class="value-sub-info"> mph </span> </div>
+                </div>
+            </td>
+            <td>
+                <div class="info-group">
+                    <div class="label">Humidity</div>
+                    <div><span data-humidity></span><span></span>&percnt;</span></div>
+                </div>
+            </td>
 
-    <!-- <section class="city">
-        <label for="search">City Search</label>
-        <input type="search" id="search">
-    </section> -->
+        </tr>
+    </template>
+</section>
+
+  
 
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
 

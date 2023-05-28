@@ -1,17 +1,7 @@
 
 
-// https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,relativehumidity_2m,weathercode,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timeformat=unixtime&timezone=America%2FChicago
-
-// export function getWeather(lat, lon, timezone) {
-
-// }
 
 
-
-var today = dayjs();
-
-$('#1a').text(today.format('MMM D, YYYY'));
-console.log(today);
 
 
 
@@ -21,23 +11,24 @@ console.log(today);
 //  Allows to draw data for a searched city, api key applied
 // function fetchWeather(query){
     
-    // draws response from data
-    function fetchWeather(requestUrl) {
+    // // draws response from data
+    // function fetchWeather(requestUrl) {
 
-    var requestUrl = `https://api.openweathermap.org/data/2.5/forcast?q=Boston&appid=784613bb935644a3c30729d18d748757&units=imperial`;
+    var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Boston&appid=784613bb935644a3c30729d18d748757&units=imperial";
 
     fetch(requestUrl)
         .then(function(response) {
         return response.json();
         })
         .then(function(data) {
-            console.log(data);
+            console.log(data.city.name);
+            // console.log(data.list[0].main.temp + "F");
         })
 
         .catch(function(err) {
             console.log(err);
         })
-    }
+    // }
  
 // call function
 
@@ -68,11 +59,10 @@ console.log(today);
 //  }
 
 
- fetchWeather();
+//  fetchWeather();
 //  renderWeather();
 
 
-    
 
 
 
