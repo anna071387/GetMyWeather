@@ -1,37 +1,61 @@
-
-
-
-
-
-
-
-
-
-
 //  Allows to draw data for a searched city, api key applied
 // function fetchWeather(query){
-    
-    // // draws response from data
-    // function fetchWeather(requestUrl) {
 
-    var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Boston&appid=784613bb935644a3c30729d18d748757&units=imperial";
+// // draws response from data
+// function fetchWeather(requestUrl) {
 
-    fetch(requestUrl)
-        .then(function(response) {
-        return response.json();
-        })
-        .then(function(data) {
-            console.log(data.city.name);
-            // console.log(data.list[0].main.temp + "F");
-        })
+// var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Boston&appid=784613bb935644a3c30729d18d748757&units=imperial";
+var searchFormEl = document.getElementById("search-form");
+var searchInputEl = document.getElementById("search-input");
+var headerCityCurrent = document.querySelector('.header-city-current');
 
-        .catch(function(err) {
-            console.log(err);
-        })
-    // }
+searchFormEl.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var searchInput = searchInputEl.value;
+  var requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput}&appid=784613bb935644a3c30729d18d748757&units=imperial`;
+
+
+  console.log(searchInputEl.value);
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+    //   console.log(data);
+      // console.log(data.list[0].main.temp + "F");
+      renderCurrentWeather(data);
+    })
+
+    .catch(function (err) {
+      console.log(err);
+    });
+});
+
+
  
-// call function
+function renderCurrentWeather(weatherData) {
+    console.log(headerCityCurrent);
 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// }
+
+// call function
 
 // separates data results
 //  function renderWeather (weather) {
@@ -53,45 +77,12 @@
 //     wind.textContent = 'Wind: ' + weather.wind.speed + "mph";
 //     resultsContainer.append(wind);
 
-    
 //     details.append('')
 
 //  }
 
-
 //  fetchWeather();
 //  renderWeather();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // var city= document.getElementById('')
 
@@ -109,30 +100,19 @@
 //    }
 //     }
 
-
 // function getWeather (){
 //     var weatherContainer = document.querySelector('weather')
-    
+
 // }
 
 // (async function() {
 //      console.log(await getLatLon(city));
 // })();
 
-
-
-
-
-
-
-
 // getWeather();
-// getForcast(); 
+// getForcast();
 
 // renderForcast();
-
-
-
 
 // Choose days counts
 // https://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={}&units=imperial
@@ -140,5 +120,3 @@
 // https://api.openweathermap.org/geo/1.0/direct?q=London=5&appid={}&units=imperial
 // Current weather
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={&units=imperial
-
-
