@@ -1,6 +1,6 @@
 # GetMyWeather 
 
-![alt text](./assets/images/MySky.jpg)
+![alt text](./assets/images/Page%201-01.jpg)
 
 Git Link:
 https://anna071387.github.io/GetMyWeather/

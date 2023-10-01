@@ -76,3 +76,10 @@ function renderHourlyWeather(hourly) {
         hourlySection.append(element)
 })
 }
+
+
+
+
+
+
+
