@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
  
-    <title>MySky</title>
+    <title>MySkyWeatherApp</title>
 </head>
 
 <body>
@@ -18,8 +17,7 @@
     <section class="header-top">Welcome to MySky Weather app
     </section>
 
- <form id="search-form">
-    <section class="find">
+    
         <div class="field">
             <label class="label"></label>
             <div class="control is-grouped ">
@@ -29,7 +27,7 @@
                 <button class="button is-link" type="submit">Submit</button>
             </div>
         </div>
-    </section>
+   
 
     <!-- 
     <header class="header-top"> -->
@@ -37,10 +35,9 @@
     <section class="local">
         <div class="header-left">
             <img class="weather-icon large" src="./assets/images/icons/sun.svg" data-current-icon />
-            <div class="header-temp-current" >
+            <div class="header-current-temp" >
                 <span data-current-temp> 65</span>&deg;
             </div>
-            <div class="header-city-current"> </div>
         </div>
 
 
@@ -63,12 +60,7 @@
                     <span class="value-sub-info">mph</span>
                 </div>
             </div>
-            <div class="info-group">
-                <div class="label2">Humidity</div>
-                <div><span data-current-relativeHumidity> 32</span>
-                    <span class="value-sub-info">&percnt;</span>
-                </div>
-            </div>
+
             <span class="stretch"></span>
 
         </div>
@@ -80,37 +72,37 @@
         <section class="day-section" data-day-section>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud.svg" class="weather-icon" />
-                <div class="day-card-date">Monday</div>
+                <div class="day-card-day">Monday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud-sun.svg" class="weather-icon" />
-                <div class="day-card-date">Tuesday</div>
+                <div class="day-card-day">Tuesday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud.svg" class="weather-icon" />
-                <div class="day-card-date">Wednesday</div>
+                <div class="day-card-day">Wednesday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud-sun.svg" class="weather-icon" />
-                <div class="day-card-date">Thursday</div>
+                <div class="day-card-day">Thursday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud-bolt.svg" class="weather-icon" />
-                <div class="day-card-date">Friday</div>
+                <div class="day-card-day">Friday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud-showers-heavy.svg" class="weather-icon" />
-                <div class="day-card-date">Saturday</div>
+                <div class="day-card-day">Saturday</div>
                 <div>32&deg;</div>
             </div>
             <div class="day-card">
                 <img src="./assets/images/icons/cloud-sun.svg" class="weather-icon" />
-                <div class="day-card-date">Sunday</div>
+                <div class="day-card-day">Sunday</div>
                 <div>32&deg;</div>
             </div>
 
@@ -133,12 +125,6 @@
                     <div class="info-group">
                         <div class="label">Temp</div>
                         <div>31&deg;</div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
                     </div>
                 </td>
                 <td>
@@ -166,12 +152,6 @@
                 </td>
                 <td>
                     <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
                         <div class="label">Wind</div>
                         <div>52&percnt;</div>
                     </div>
@@ -191,12 +171,6 @@
                     <div class="info-group">
                         <div class="label">Temp</div>
                         <div>31&deg;</div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
                     </div>
                 </td>
                 <td>
@@ -224,12 +198,6 @@
                 </td>
                 <td>
                     <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
                         <div class="label">Wind</div>
                         <div>52&percnt;</div>
                     </div>
@@ -253,12 +221,6 @@
                 </td>
                 <td>
                     <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
                         <div class="label">Wind</div>
                         <div>52&percnt;</div>
                     </div>
@@ -276,20 +238,14 @@
                 </td>
                 <td>
                     <div class="info-group">
-                        <div class="label">Temp</div>
-                        <div>31&deg;</div>
+                      <div class="label">Temp</div>
+                      <div>31&deg;</div>
                     </div>
                 </td>
                 <td>
                     <div class="info-group">
-                        <div class="label">Humidity</div>
-                        <div>6<span class="value-sub-info">mph</span></div>
-                    </div>
-                </td>
-                <td>
-                    <div class="info-group">
-                        <div class="label">Wind</div>
-                        <div>52&percnt;</div>
+                      <div class="label">Wind</div>
+                      <div>52<span class="value-sub-info">mph</span></div>
                     </div>
                 </td>
             </tr>
@@ -300,56 +256,44 @@
 
 
 
-
-
-
-
     <template id="day-card-template">
         <div class="day-card">
-            <img data-icon class="weather-icon" />
-            <div class="day-card-date" data-date></div>
-            <div><span data-temp></span><span>&deg;</span></div>
+          <img data-icon class="weather-icon" />
+          <div class="day-card-day" data-date></div>
+          <div><span data-temp></span><span>&deg;</span></div>
         </div>
-    </template>
+      </template>
 
     <template id="hour-row-template">
         <tr class="hour-row">
             <td>
                 <div class="info-group">
-                    <div class="label" data-date></div>
-                    <div data-time></div>
+                  <div class="label" data-day></div>
+                  <div data-time></div>
                 </div>
-            </td>
+              </td>
             <td>
-                <img data-icon class="weather-icon">
-            </td>
-            <td>
-                <div class="info-group">
-                    <div class="label">Temp</div>
-                    <div><span data-temp></span><span>&deg;</span></div>
-                </div>
-            </td>
+                <img data-icon class="weather-icon" />
+              </td>
             <td>
                 <div class="info-group">
-                    <div class="label">Humidity</div>
-                    <div><span data-relativeHumidity></span><span class="value-sub-info">mph</span></div>
+                  <div class="label">Temp</div>
+                  <div><span data-temp></span><span>&deg;</span></div>
                 </div>
-            </td>
+              </td>
             <td>
                 <div class="info-group">
-                    <div class="label">Wind</div>
-                    <div><span data-wind></span>&percnt;</div>
+                  <div class="label">Wind</div>
+                  <div>
+                    <span data-wind></span><span class="value-sub-info">mph</span>
+                  </div>
                 </div>
-            </td>
+              </td>
         </tr>
     </template>
 </section>
 
   
-
-
-
-</form>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
         integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script> -->
